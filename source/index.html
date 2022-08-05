@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: Sedona</title>
   </head>
-  <body>
+  <body class="page__body">
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+
+    <header class="page-header">
+      <a href="" class="page-header__logo">
+        <img src="./img/logo/logotype-mobile.png" width="101.7" height="84" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-list__item">Главная</li>
+          <li class="menu-list__item">Фото и видео</li>
+          <li class="menu-list__item">Форма отзыва</li>
+          <li class="menu-list__item">Html academy</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Sedona</h1>
+
+      <section class="intro">
+        <h2 class="visually-hidden">Вступление</h2>
+        <img src="./img/text-index.png" width="564" height="428" alt="Два предложения написанных на английском языке. В переводе они читаются как: добро пожаловать в великолепную Седону. «Потому что Гранд-Каньон — отстой!»">
+        <p class="intro__text-1">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="intro__text-2">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <section class="cause-1">
+        <div class="cause-1__box">
+          <h2 class="title">Настоящий городок</h2>
+          <p class="cause-1__text">— №1 —</p>
+          <p class="cause-1__text"> Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="./img/photo-city/photo-city1.jpg" width="320" height="260" alt="На фотографии отображено дерево, флаги, дом с замутнённой вывеской. Виднеются горы.">
+      </section>
+      <section class="benefits">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <h3 class="benefits__title subject">Жилье</h3>
+            <p class="benefits__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__title subject">Сувениры</h3>
+            <p class="benefits__text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__title subject">Еда</h3>
+            <p class="benefits__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="cause-2">
+        <div class="cause-2__box">
+          <h2 class="title">Там есть мост дьявола</h2>
+          <p class="cause-2__text">— №2 —</p>
+          <p class="cause-2__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img src="./img/photo-bridge/photo-bridge1.jpg" width="320" height="260" alt="Огромный скалисты выступ.">
+      </section>
+      <section class="other-benefits">
+        <h2 class="visually-hidden">Остальные преимущества</h2>
+        <ul class="other-benefits__list">
+          <li class="other-benefits__item">
+            <h3 class="other-benefits__title subject">Небольшая площадь</h3>
+            <p class="other-benefits__text">— №3 —</p>
+            <p class="other-benefits__text">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="other-benefits__item">
+            <h3 class="other-benefits__title subject">Красивая дорога</h3>
+            <p class="other-benefits__text">— №4 —</p>
+            <p class="other-benefits__text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="other-benefits__item">
+            <h3 class="other-benefits__title subject">Мало туристов</h3>
+            <p class="other-benefits__text">— №5 —</p>
+            <p class="other-benefits__text">Большинство едет в Гранд Каньон толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="find-a-hotel">
+        <h2 class="find-a-hotel__title subject">Заинтересовались?</h2>
+        <p class="find-a-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="find-a-hotel__button">Найти гостиницу</button>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Местоположение на карте</h2>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">#visitsedona</p>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href=""></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href=""></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href=""></a>
+        </li>
+      </ul>
+      <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</a>
+    </footer>
 
   </body>
 </html>
