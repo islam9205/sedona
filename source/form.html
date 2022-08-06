@@ -29,39 +29,54 @@
       <div class="intro-form">
         <img src="./img/sedona/sedona.png" width="229" height="39" alt="">
       </div>
-      <section class="leave-a-review">
+      <form class="leave-a-review" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="leave-a-review__title">Оставьте свой отзыв</h1>
         <p class="leave-a-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </section>
-      <div class="container">
-        <section class="introduce-yourself">
-          <h2 class="title">Представьтесь:</h2>
-          <p class="introduce-yourself__box">
-            <label class="introduce-yourself__label" for="name">Имя*:</label>
-            <input class="introduce-yourself__input" type="text" id="name" name="name" placeholder="Петр">
+        <div class="container">
+          <section class="introduce-yourself">
+            <h2 class="title">Представьтесь:</h2>
+            <p class="introduce-yourself__box">
+              <label class="introduce-yourself__label" for="name">Имя*:</label>
+              <input class="introduce-yourself__input" type="text" id="name" name="name" placeholder="Петр">
+            </p>
+            <p class="introduce-yourself__box">
+              <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
+              <input class="introduce-yourself__input" type="text" id="surname" name="surname" placeholder="Иванов">
+            </p>
+            <p class="introduce-yourself__box">
+              <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
+              <input class="introduce-yourself__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+            </p>
+          </section>
+          <section class="contacts">
+            <h2 class="title">Контактная информация:</h2>
+            <p class="contacts__box">
+              <label class="contacts__label" for="tel">Контактный телефон*:</label>
+              <input class="contacts__input" type="text" id="tel" name="tel" placeholder="Введите телефон">
+            </p>
+            <p class="contacts__box">
+              <label class="contacts__label" for="emal">Электронная почта*:</label>
+              <input class="contacts__input" type="text" id="emal" name="emal" placeholder="Введите e-mail">
+            </p>
+          </section>
+        </div>
+        <section class="impression">
+          <h2 class="title">Ваше общее впечатление:</h2>
+          <p class="impression__box">
+            <input class="impression__input" checked type="radio" id="positive" name="impression" value="positive">
+            <label class="impression__label" for="positive">Скорее положительное</label>
           </p>
-          <p class="introduce-yourself__box">
-            <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
-            <input class="introduce-yourself__input" type="text" id="surname" name="surname" placeholder="Иванов">
+          <p class="impression__box">
+            <input class="impression__input" type="radio" id="negative" name="impression" value="negative">
+            <label class="impression__label" for="negative">Скорее отрицательное</label>
           </p>
-          <p class="introduce-yourself__box">
-            <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
-            <input class="introduce-yourself__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+          <p class="impression__box">
+            <input class="impression__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
+            <label class="impression__label" for="difficult-to-answer">Затрудняюсь ответить</label>
           </p>
         </section>
-        <section class="contacts">
-          <h2 class="title">Контактная информация:</h2>
-          <p class="contacts__box">
-            <label class="contacts__label" for="tel">Контактный телефон*:</label>
-            <input class="contacts__input" type="text" id="tel" name="tel" placeholder="Введите телефон">
-          </p>
-          <p class="contacts__box">
-            <label class="contacts__label" for="emal">Электронная почта*:</label>
-            <input class="contacts__input" type="text" id="emal" name="emal" placeholder="Введите e-mail">
-          </p>
-        </section>
-      </div>
-      
+      </form>
+
     </main>
 
   </body>
