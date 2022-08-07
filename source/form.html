@@ -16,11 +16,19 @@
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="menu-list">
-          <li class="menu-list__item">Главная</li>
-          <li class="menu-list__item">Фото и видео</li>
-          <li class="menu-list__item">Форма отзыва</li>
-          <li class="menu-list__item">Html academy</li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html"> Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="gallery.html"> Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link--current"> Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru"> Html academy</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,68 +38,70 @@
         <img src="./img/sedona.svg" width="229" height="39" alt="Седона">
       </div>
       <form class="leave-a-review" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="leave-a-review__title">Оставьте свой отзыв</h1>
-        <p class="leave-a-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <section class="header">
+          <h1 class="header__title">Оставьте свой отзыв</h1>
+          <p class="header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
         <div class="container">
           <fieldset class="introduce-yourself">
             <legend>Представьтесь:</legend>
-            <p class="introduce-yourself__box">
-              <label class="introduce-yourself__label" for="name">Имя*:</label>
-              <input class="introduce-yourself__input" type="text" id="name" name="name" placeholder="Петр">
+            <p class="box-text">
+              <label class="box-text__label" for="name">Имя*:</label>
+              <input class="box-text__input" type="text" id="name" name="name" placeholder="Петр">
             </p>
-            <p class="introduce-yourself__box">
-              <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
-              <input class="introduce-yourself__input" type="text" id="surname" name="surname" placeholder="Иванов">
+            <p class="box-text">
+              <label class="box-text__label" for="surname">Фамилия*:</label>
+              <input class="box-text__input" type="text" id="surname" name="surname" placeholder="Иванов">
             </p>
-            <p class="introduce-yourself__box">
-              <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
-              <input class="introduce-yourself__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+            <p class="box-text">
+              <label class="box-text__label" for="patronymic">Отчество:</label>
+              <input class="box-text__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
           <fieldset class="contacts">
             <legend>Контактная информация:</legend>
-            <p class="contacts__box">
-              <label class="contacts__label" for="tel">Контактный телефон*:</label>
-              <input class="contacts__input" type="text" id="tel" name="tel" placeholder="Введите телефон">
+            <p class="box-text">
+              <label class="box-text__label" for="tel">Контактный телефон*:</label>
+              <input class="box-text__input box-text__input--img box-text__input--tel" type="text" id="tel" name="tel" placeholder="Введите телефон">
             </p>
-            <p class="contacts__box">
-              <label class="contacts__label" for="emal">Электронная почта*:</label>
-              <input class="contacts__input" type="text" id="emal" name="emal" placeholder="Введите e-mail">
+            <p class="box-text">
+              <label class="box-text__label" for="email">Электронная почта*:</label>
+              <input class="box-text__input box-text__input--img box-text__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
         </div>
         <fieldset class="impression">
           <legend>Ваше общее впечатление:</legend>
-          <p class="impression__box">
-            <input class="impression__input" checked type="radio" id="positive" name="impression" value="positive">
-            <label class="impression__label" for="positive">Скорее положительное</label>
+          <p class="box-checked">
+            <input class="box-checked__input" checked type="radio" id="positive" name="impression" value="positive">
+            <label class="box-checked__label" for="positive">Скорее положительное</label>
           </p>
-          <p class="impression__box">
-            <input class="impression__input" type="radio" id="negative" name="impression" value="negative">
-            <label class="impression__label" for="negative">Скорее отрицательное</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="radio" id="negative" name="impression" value="negative">
+            <label class="box-checked__label" for="negative">Скорее отрицательное</label>
           </p>
-          <p class="impression__box">
-            <input class="impression__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
-            <label class="impression__label" for="difficult-to-answer">Затрудняюсь ответить</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
+            <label class="box-checked__label" for="difficult-to-answer">Затрудняюсь ответить</label>
           </p>
         </fieldset>
         <fieldset class="attraction">
           <legend>Посещенные достопримечательности:</legend>
-          <p>
-            <input type="checkbox" id="devils-bridge" name="devils-bridge">
-            <label for="devils-bridge">Мост Дьявола</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="checkbox" id="devils-bridge" name="devils-bridge">
+            <label class="box-checked__label" for="devils-bridge">Мост Дьявола</label>
           </p>
-          <p>
-            <input type="checkbox" id="mount-bell" name="mount-bell">
-            <label for="mount-bell">Гора-Колокол</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="checkbox" id="mount-bell" name="mount-bell">
+            <label class="box-checked__label" for="mount-bell">Гора-Колокол</label>
           </p>
-          <p>
-            <input type="checkbox" id="slide-park" name="slide-park">
-            <label for="slide-park">Слайд-парк</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="checkbox" id="slide-park" name="slide-park">
+            <label class="box-checked__label" for="slide-park">Слайд-парк</label>
           </p>
-          <p>
-            <input type="checkbox" id="red-rocks" name="red-rocks">
-            <label for="red-rocks">Красные скалы</label>
+          <p class="box-checked">
+            <input class="box-checked__input" type="checkbox" id="red-rocks" name="red-rocks">
+            <label class="box-checked__label" for="red-rocks">Красные скалы</label>
           </p>
         </fieldset>
         <fieldset class="describe-your-emotions">
@@ -133,44 +143,44 @@
     <div class="container">
       <section class="introduce-yourself">
         <h2 class="title">Представьтесь:</h2>
-        <p class="introduce-yourself__box">
-          <label class="introduce-yourself__label" for="name">Имя*:</label>
-          <input class="introduce-yourself__input" type="text" id="name" name="name" placeholder="Петр">
+        <p class="box-text">
+          <label class="box-text__label" for="name">Имя*:</label>
+          <input class="box-text__input" type="text" id="name" name="name" placeholder="Петр">
         </p>
-        <p class="introduce-yourself__box">
-          <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
-          <input class="introduce-yourself__input" type="text" id="surname" name="surname" placeholder="Иванов">
+        <p class="box-text">
+          <label class="box-text__label" for="surname">Фамилия*:</label>
+          <input class="box-text__input" type="text" id="surname" name="surname" placeholder="Иванов">
         </p>
-        <p class="introduce-yourself__box">
-          <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
-          <input class="introduce-yourself__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+        <p class="box-text">
+          <label class="box-text__label" for="patronymic">Отчество:</label>
+          <input class="box-text__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
         </p>
       </section>
       <section class="contacts">
         <h2 class="title">Контактная информация:</h2>
-        <p class="contacts__box">
-          <label class="contacts__label" for="tel">Контактный телефон*:</label>
-          <input class="contacts__input" type="text" id="tel" name="tel" placeholder="Введите телефон">
+        <p class="box-text">
+          <label class="box-text__label" for="tel">Контактный телефон*:</label>
+          <input class="box-text__input" type="text" id="tel" name="tel" placeholder="Введите телефон">
         </p>
-        <p class="contacts__box">
-          <label class="contacts__label" for="emal">Электронная почта*:</label>
-          <input class="contacts__input" type="text" id="emal" name="emal" placeholder="Введите e-mail">
+        <p class="box-text">
+          <label class="box-text__label" for="emal">Электронная почта*:</label>
+          <input class="box-text__input" type="text" id="emal" name="emal" placeholder="Введите e-mail">
         </p>
       </section>
     </div>
     <section class="impression">
       <h2 class="title">Ваше общее впечатление:</h2>
-      <p class="impression__box">
-        <input class="impression__input" checked type="radio" id="positive" name="impression" value="positive">
-        <label class="impression__label" for="positive">Скорее положительное</label>
+      <p class="box-checked">
+        <input class="box-checked__input" checked type="radio" id="positive" name="impression" value="positive">
+        <label class="box-checked__label" for="positive">Скорее положительное</label>
       </p>
-      <p class="impression__box">
-        <input class="impression__input" type="radio" id="negative" name="impression" value="negative">
-        <label class="impression__label" for="negative">Скорее отрицательное</label>
+      <p class="box-checked">
+        <input class="box-checked__input" type="radio" id="negative" name="impression" value="negative">
+        <label class="box-checked__label" for="negative">Скорее отрицательное</label>
       </p>
-      <p class="impression__box">
-        <input class="impression__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
-        <label class="impression__label" for="difficult-to-answer">Затрудняюсь ответить</label>
+      <p class="box-checked">
+        <input class="box-checked__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
+        <label class="box-checked__label" for="difficult-to-answer">Затрудняюсь ответить</label>
       </p>
     </section>
     <section class="describe-your-emotions">
