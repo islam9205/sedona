@@ -8,8 +8,9 @@
 @bg-author: #EAEAEA;
 @bg-img-intro: url(../../img/back/index-back-mobile.jpg);
 @bg-img-sedona: url(../../img/back/back-mobile.jpg);
-@bg-img-home: 
-
+@icon-house: url(../../img/benefits/icon-house.png);
+@icon-gift: url(../../img/benefits/icon-gift.png);
+@icon-burger: url(../../img/benefits/icon-burger.png);
 
 .size(@size, @height, @weight) {
   font-size: @size;
@@ -23,6 +24,8 @@
 
 .list() {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
 }
 
 .bg(@color, @img) {
@@ -32,7 +35,7 @@
 }
 
 .bg-item(@img) {
-  background: @img no-repeat -10px -10px;
+  background: @img no-repeat;
 }
 
 .page__body {
@@ -47,7 +50,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;

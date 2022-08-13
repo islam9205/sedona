@@ -1,7 +1,35 @@
+.benefits {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.benefits * {
+  margin-top: 0;
+}
+
 .benefits__list {
   .list();
+  margin-bottom: 0;
+}
+
+.benefits__item {
+  padding-left: 48px;
+  margin-bottom: 26px;
 }
 
 .benefits__item:first-child {
-  background: url();
+  .bg-item(@icon-house);
+}
+
+.benefits__item:nth-child(2) {
+  .bg-item(@icon-gift);
+}
+
+.benefits__item:last-child {
+  .bg-item(@icon-burger);
+  margin-bottom: 0;
+}
+
+.benefits__item *:last-child {
+  margin-bottom: 0;
 }
