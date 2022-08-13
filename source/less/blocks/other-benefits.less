@@ -1,3 +1,34 @@
+.other-benefits {
+  padding-top: 26px;
+  padding-bottom: 24px;
+}
+
 .other-benefits__list {
   .list();
+  margin-bottom: 0;
+}
+
+.other-benefits__item {
+  border-bottom: 1px solid @other-benefits-line;
+  padding-top: 25px;
+}
+
+.other-benefits__item:first-child {
+  padding-top: 0;
+}
+
+.other-benefits__item:last-child {
+  border-bottom: none;
+}
+
+.other-benefits__item *:last-child {
+  margin-bottom: 24px;
+}
+
+.other-benefits__item:last-child *:last-child {
+  margin-bottom: 0;
+}
+
+.other-benefits__title {
+  .font-inherit();
 }
