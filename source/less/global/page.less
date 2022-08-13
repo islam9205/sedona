@@ -1,14 +1,38 @@
+@color-text1: #333;
+@color-text2: #FFF;
 @bg-cause: #81B3D2;
 @bg-the-reasons: #EEEEEE;
 @color-line: #E5E5E5;
 @bg-input: #F2F2F2;
 @bg-input-img: #E6E6E6;
+@bg-author: #EAEAEA;
+@bg-img-intro: url(../../img/back/index-back-mobile.jpg);
+@bg-img-sedona: url(../../img/back/back-mobile.jpg);
+
+.size(@size, @height, @weight) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+}
+
+.color-text(@color) {
+  color: @color;
+}
+
+.bg-color(@color, ) {
+  background-color: @color;
+}
 
 .page__body {
   font-family: "PT Sans", serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
