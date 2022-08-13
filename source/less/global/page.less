@@ -8,6 +8,8 @@
 @bg-author: #EAEAEA;
 @bg-img-intro: url(../../img/back/index-back-mobile.jpg);
 @bg-img-sedona: url(../../img/back/back-mobile.jpg);
+@bg-img-home: 
+
 
 .size(@size, @height, @weight) {
   font-size: @size;
@@ -19,10 +21,18 @@
   color: @color;
 }
 
+.list() {
+  list-style: none;
+}
+
 .bg(@color, @img) {
   background-color: @color;
   background-image: @img;
   background-repeat: no-repeat;
+}
+
+.bg-item(@img) {
+  background: @img no-repeat -10px -10px;
 }
 
 .page__body {
