@@ -8,11 +8,11 @@
 @bg-input: #F2F2F2;
 @bg-input-img: #E6E6E6;
 @bg-author: #EAEAEA;
-@bg-img-intro: url(../../img/back/index-back-mobile.jpg);
-@bg-img-sedona: url(../../img/back/back-mobile.jpg);
-@icon-house: url(../../img/benefits/icon-house.png);
-@icon-gift: url(../../img/benefits/icon-gift.png);
-@icon-burger: url(../../img/benefits/icon-burger.png);
+@bg-img-intro: url("../../img/back/index-back-mobile.jpg");
+@bg-img-sedona: url("../../img/back/back-mobile.jpg");
+@icon-house: url("../../img/benefits/icon-house.png");
+@icon-gift: url("../../img/benefits/icon-gift.png");
+@icon-burger: url("../../img/benefits/icon-burger.png");
 
 .size(@size, @height, @weight) {
   font-size: @size;
@@ -55,6 +55,17 @@
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
