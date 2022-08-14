@@ -45,34 +45,34 @@
         </section>
         <div class="container">
           <fieldset class="leave-a-review__fieldset introduce-yourself">
-            <legend>Представьтесь:</legend>
-            <p class="box-text">
+            <legend class="leave-a-review__legend introduce-yourself__legend">Представьтесь:</legend>
+            <p class="box-text introduce-yourself__box">
               <label class="box-text__label" for="name">Имя*:</label>
               <input class="box-text__input" type="text" id="name" name="name" placeholder="Петр">
             </p>
-            <p class="box-text">
+            <p class="box-text introduce-yourself__box">
               <label class="box-text__label" for="surname">Фамилия*:</label>
               <input class="box-text__input" type="text" id="surname" name="surname" placeholder="Иванов">
             </p>
-            <p class="box-text">
+            <p class="box-text introduce-yourself__box">
               <label class="box-text__label" for="patronymic">Отчество:</label>
               <input class="box-text__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
           <fieldset class="leave-a-review__fieldset contacts">
-            <legend>Контактная информация:</legend>
-            <p class="box-text">
+            <legend class="leave-a-review__legend contacts__legend">Контактная информация:</legend>
+            <p class="box-text contacts__box">
               <label class="box-text__label" for="tel">Контактный телефон*:</label>
               <input class="box-text__input box-text__input--img box-text__input--tel" type="text" id="tel" name="tel" placeholder="Введите телефон">
             </p>
-            <p class="box-text">
+            <p class="box-text contacts__box">
               <label class="box-text__label" for="email">Электронная почта*:</label>
               <input class="box-text__input box-text__input--img box-text__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
         </div>
         <fieldset class="leave-a-review__fieldset impression">
-          <legend>Ваше общее впечатление:</legend>
+          <legend class="leave-a-review__legend">Ваше общее впечатление:</legend>
           <p class="box-checked">
             <input class="box-checked__input" checked type="radio" id="positive" name="impression" value="positive">
             <label class="box-checked__label" for="positive">Скорее положительное</label>
@@ -87,7 +87,7 @@
           </p>
         </fieldset>
         <fieldset class="leave-a-review__fieldset attraction">
-          <legend>Посещенные достопримечательности:</legend>
+          <legend class="leave-a-review__legend">Посещенные достопримечательности:</legend>
           <p class="box-checked">
             <input class="box-checked__input" type="checkbox" id="devils-bridge" name="devils-bridge">
             <label class="box-checked__label" for="devils-bridge">Мост Дьявола</label>
@@ -106,7 +106,7 @@
           </p>
         </fieldset>
         <fieldset class="leave-a-review__fieldset describe-your-emotions">
-          <legend>Опишите свои эмоции:</legend>
+          <legend class="leave-a-review__legend">Опишите свои эмоции:</legend>
           <textarea class="describe-your-emotions__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button type="submit">Отправить отзыв</button>
