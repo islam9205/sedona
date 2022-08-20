@@ -1,0 +1,39 @@
+.size(@size, @height, @weight) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+}
+
+.dimensions(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.font-inherit() {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.color-text(@color) {
+  color: @color;
+}
+
+.list() {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.bg(@color, @img) {
+  background-color: @color;
+  background-image: @img;
+  background-repeat: no-repeat;
+}
+
+.bg-item(@img) {
+  background: @img no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-position: center 0;
+  }
+}

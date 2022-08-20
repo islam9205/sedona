@@ -5,24 +5,50 @@
 .benefits__list {
   .list();
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      gap: 70px;
+      padding: 0 33px;
+    }
+  }
 }
 
 .benefits__item {
   padding-left: 48px;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 101px;
+  }
 }
 
 .benefits__item:first-child {
   .bg-item(@icon-house);
+
+  @media (max-width: @mobile-width-only) {
+    background-size: 39px 36.83px;
+  }
 }
 
 .benefits__item:nth-child(2) {
   .bg-item(@icon-gift);
+
+  @media (max-width: @mobile-width-only) {
+    background-size: 32px 38px;
+  }
 }
 
 .benefits__item:last-child {
   .bg-item(@icon-burger);
   margin-bottom: 0;
+
+  @media (max-width: @mobile-width-only) {
+    background-size: 40px 34.9px;
+  }
 }
 
 .benefits__item *:last-child {

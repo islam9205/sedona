@@ -5,11 +5,19 @@
 .other-benefits__list {
   .list();
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .other-benefits__item {
   border-bottom: 1px solid @other-benefits-line;
   padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .other-benefits__item:first-child {
