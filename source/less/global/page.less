@@ -26,12 +26,24 @@ img {
   overflow: hidden;
 }
 
+.page {
+  height: 100%;
+}
+
 .page__body {
+  margin: 0 auto;
+  max-width: 1200px;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr min-content;
+    min-height: 100%;
+  }
 }
 
 .page__page-header {
