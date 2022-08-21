@@ -35,3 +35,17 @@
     margin-bottom: 25px;
   }
 }
+
+.leave-a-review__box {
+  display: flex;
+}
+
+.leave-a-review__required-fields {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    .size(14px, inherit, 400);
+    .color-text(@color-text1);
+  }
+}
