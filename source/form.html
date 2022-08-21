@@ -71,41 +71,43 @@
               <input class="box-text__input box-text__input--img box-text__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
+          <fieldset class="leave-a-review__fieldset leave-a-review__fieldset--bottom impression">
+            <legend class="leave-a-review__legend leave-a-review__legend--bottom">Ваше общее впечатление:</legend>
+            <p class="box-checked box-checked--radio">
+              <input class="box-checked__input" checked type="radio" id="positive" name="impression" value="positive">
+              <label class="box-checked__label" for="positive">Скорее положительное</label>
+            </p>
+            <p class="box-checked box-checked--radio">
+              <input class="box-checked__input" type="radio" id="negative" name="impression" value="negative">
+              <label class="box-checked__label" for="negative">Скорее отрицательное</label>
+            </p>
+            <p class="box-checked box-checked--radio">
+              <input class="box-checked__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
+              <label class="box-checked__label" for="difficult-to-answer">Затрудняюсь ответить</label>
+            </p>
+          </fieldset>
+          <fieldset class="leave-a-review__fieldset leave-a-review__fieldset--bottom attraction">
+            <legend class="leave-a-review__legend leave-a-review__legend--bottom">Посещенные достопримечательности:</legend>
+            <div class="attraction__box">
+              <p class="box-checked">
+                <input class="box-checked__input" type="checkbox" id="devils-bridge" name="devils-bridge">
+                <label class="box-checked__label" for="devils-bridge">Мост Дьявола</label>
+              </p>
+              <p class="box-checked">
+                <input class="box-checked__input" type="checkbox" id="mount-bell" name="mount-bell">
+                <label class="box-checked__label" for="mount-bell">Гора-Колокол</label>
+              </p>
+              <p class="box-checked">
+                <input class="box-checked__input" type="checkbox" id="slide-park" name="slide-park">
+                <label class="box-checked__label" for="slide-park">Слайд-парк</label>
+              </p>
+              <p class="box-checked">
+                <input class="box-checked__input" type="checkbox" id="red-rocks" name="red-rocks">
+                <label class="box-checked__label" for="red-rocks">Красные скалы</label>
+              </p>
+            </div>
+          </fieldset>
         </div>
-        <fieldset class="leave-a-review__fieldset leave-a-review__fieldset--bottom impression">
-          <legend class="leave-a-review__legend leave-a-review__legend--bottom">Ваше общее впечатление:</legend>
-          <p class="box-checked box-checked--radio">
-            <input class="box-checked__input" checked type="radio" id="positive" name="impression" value="positive">
-            <label class="box-checked__label" for="positive">Скорее положительное</label>
-          </p>
-          <p class="box-checked box-checked--radio">
-            <input class="box-checked__input" type="radio" id="negative" name="impression" value="negative">
-            <label class="box-checked__label" for="negative">Скорее отрицательное</label>
-          </p>
-          <p class="box-checked box-checked--radio">
-            <input class="box-checked__input" type="radio" id="difficult-to-answer" name="impression" value="difficult-to-answer">
-            <label class="box-checked__label" for="difficult-to-answer">Затрудняюсь ответить</label>
-          </p>
-        </fieldset>
-        <fieldset class="leave-a-review__fieldset leave-a-review__fieldset--bottom attraction">
-          <legend class="leave-a-review__legend leave-a-review__legend--bottom">Посещенные достопримечательности:</legend>
-          <p class="box-checked">
-            <input class="box-checked__input" type="checkbox" id="devils-bridge" name="devils-bridge">
-            <label class="box-checked__label" for="devils-bridge">Мост Дьявола</label>
-          </p>
-          <p class="box-checked">
-            <input class="box-checked__input" type="checkbox" id="mount-bell" name="mount-bell">
-            <label class="box-checked__label" for="mount-bell">Гора-Колокол</label>
-          </p>
-          <p class="box-checked">
-            <input class="box-checked__input" type="checkbox" id="slide-park" name="slide-park">
-            <label class="box-checked__label" for="slide-park">Слайд-парк</label>
-          </p>
-          <p class="box-checked">
-            <input class="box-checked__input" type="checkbox" id="red-rocks" name="red-rocks">
-            <label class="box-checked__label" for="red-rocks">Красные скалы</label>
-          </p>
-        </fieldset>
         <fieldset class="leave-a-review__fieldset leave-a-review__describe-your-emotions describe-your-emotions">
           <legend class="leave-a-review__legend describe-your-emotions__legend">Опишите свои эмоции:</legend>
           <textarea class="describe-your-emotions__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
