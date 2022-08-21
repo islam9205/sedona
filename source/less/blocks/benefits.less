@@ -23,35 +23,35 @@
     padding-left: 0;
     padding-top: 101px;
   }
-}
 
-.benefits__item:first-child {
-  .bg-item(@icon-house);
+  &:first-child {
+    .bg-item(@icon-house);
 
-  @media (max-width: @mobile-width-only) {
-    background-size: 39px 36.83px;
+    @media (max-width: @mobile-width-only) {
+      background-size: 39px 36.83px;
+    }
   }
-}
 
-.benefits__item:nth-child(2) {
-  .bg-item(@icon-gift);
+  &:nth-child(2) {
+    .bg-item(@icon-gift);
 
-  @media (max-width: @mobile-width-only) {
-    background-size: 32px 38px;
+    @media (max-width: @mobile-width-only) {
+      background-size: 32px 38px;
+    }
   }
-}
 
-.benefits__item:last-child {
-  .bg-item(@icon-burger);
-  margin-bottom: 0;
+  &:last-child {
+    .bg-item(@icon-burger);
+    margin-bottom: 0;
 
-  @media (max-width: @mobile-width-only) {
-    background-size: 40px 34.9px;
+    @media (max-width: @mobile-width-only) {
+      background-size: 40px 34.9px;
+    }
   }
-}
 
-.benefits__item *:last-child {
-  margin-bottom: 0;
+  & *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .benefits__title {
