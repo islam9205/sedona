@@ -1,6 +1,12 @@
 .img-block__list {
   .list();
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .img-block__item {
@@ -14,6 +20,10 @@
 
   & * {
     margin-top: 0;
+  }
+
+  &:first-child {
+    grid-row: 1 / -1;
   }
 }
 
