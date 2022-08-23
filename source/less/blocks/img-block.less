@@ -3,9 +3,11 @@
   margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-rows: 1fr min-content;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -16,14 +18,12 @@
 
   &:first-child {
     border-top: 1px solid @color-line;
+    /* grid-column: 1 / span 3; */
+    flex-grow: 1;
   }
 
   & * {
     margin-top: 0;
-  }
-
-  &:first-child {
-    grid-row: 1 / -1;
   }
 }
 
