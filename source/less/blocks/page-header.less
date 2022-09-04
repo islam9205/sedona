@@ -1,12 +1,15 @@
 .page-header {
   display: flex;
-  flex-direction: column;
 
-  /* &--nojs {
-    align-items: flex-start;
-    height: auto;
+  &--column {
+    flex-direction: column;
+    /* align-items: flex-start;
+    height: auto; */
   }
- */
+
+  &--column .page-header__logo {
+    order: 2;
+  }
 
   & * {
     margin-top: 0;
@@ -18,7 +21,11 @@
 }
 
 .page-header__logo {
-  order: 2;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -28px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-right: calc(auto - 43.1px);
+  }
 }
