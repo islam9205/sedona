@@ -9,6 +9,7 @@
 
   &--column .page-header__logo {
     order: 2;
+    margin-right: auto;
   }
 
   & * {
@@ -22,10 +23,6 @@
 
 .page-header__logo {
   margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto - 43.1; */
   margin-bottom: -28px;
-
-  @media (max-width: @mobile-width-only) {
-    margin-right: calc(auto - 43.1px);
-  }
 }
