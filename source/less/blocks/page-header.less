@@ -19,6 +19,13 @@
   & *:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    & {
+      position: relative;
+      z-index: 2;
+    }
+  }
 }
 
 .page-header__logo {
