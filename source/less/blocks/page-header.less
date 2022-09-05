@@ -23,7 +23,6 @@
   @media (min-width: @tablet-width) {
     & {
       position: relative;
-      z-index: 2;
     }
   }
 }
@@ -32,4 +31,12 @@
   margin-left: auto;
   /* margin-right: auto - 43.1; */
   margin-bottom: -28px;
+
+  @media (min-width: @tablet-width) {
+    & {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
