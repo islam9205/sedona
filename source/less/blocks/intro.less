@@ -1,18 +1,51 @@
 .intro__box {
-  .bg(@color-text1, @bg-img-intro);
-  height: 389px;
+  background-color: @color-text1;
+  background-image:
+    @bgi-vector-left-mobile,
+    @bgi-vector-rigth-mobile,
+    @bg-img-intro;
+  background-position:
+    0 bottom,
+    right bottom,
+    0 0;
+    background-repeat: no-repeat;
+  min-height: 389px;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+    background-image:
+      @bgi-vector-left-tablet,
+      @bgi-vector-right-tablet,
+      @bgi-intro-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image:
+      @bgi-vector-left-desktop,
+      @bgi-vector-right-desktop,
+      @bgi-intro-desktop;
+  }
 }
 
 .intro__img {
   margin: 0 auto;
   padding-top: 90px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    .dimensions(461px, 349.97px);
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459.5px;
+  }
 }
 
 .intro__text {
-  margin-top: 0;
-  margin-bottom: 21px;
+  margin: 0 18px 21px 17px;
+  text-align: center;
 
   &:last-child {
     margin-bottom: 0;
