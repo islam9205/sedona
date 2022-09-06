@@ -13,6 +13,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 43.5px;
     min-height: 518px;
     background-image:
       @bgi-vector-left-tablet,
@@ -21,6 +22,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
     background-image:
       @bgi-vector-left-desktop,
       @bgi-vector-right-desktop,
@@ -53,5 +55,14 @@
 
   &--height {
     line-height: 26px;
+  }
+
+  @media(min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+
+    margin-left: 124px;
+    margin-right: 124px;
   }
 }
