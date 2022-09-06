@@ -115,6 +115,10 @@
       margin-right: auto;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
+  }
 }
 
 .main-nav__link {
@@ -145,6 +149,18 @@
     &:active {
       .color-text(@color-link);
       opacity: 0.3;
+    }
+
+    &--active {
+      color: @active;
+    }
+
+    &--active:hover {
+      color: @active-hover;
+    }
+
+    &--active:active {
+      color: @active;
     }
   }
 }
