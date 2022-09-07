@@ -15,10 +15,13 @@
   .color-text(@color-text2);
 
   @media (min-width: @tablet-width) {
-    & {
-      padding: 40px 32px;
-      width: 256px;
-    }
+    padding: 40px 32px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 78px;
+    width: 400px;
   }
 
   &--top {
@@ -29,6 +32,11 @@
     background-position:
       top left,
       top right;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 40px;
+      background-image: none;
+    }
 
     @media (min-width: @tablet-width) {
       padding-top: 40px;
