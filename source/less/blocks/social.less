@@ -24,3 +24,27 @@
 .social__link:active {
   background-color: @bg-cause-active;
 }
+
+.social__link:active::before {
+  opacity: 0.3;
+}
+
+.social__link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vk::before {
+  background-image: @social-vk;
+}
+
+.social__link--telegram::before {
+  background-image: @social-telegram
+}
+
+.social__link--youtube::before {
+  background-image: @social-youtube
+}

@@ -10,12 +10,22 @@
 
 .find-a-hotel__title {
   font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .find-a-hotel__text {
   .size(14px, 24px, 400);
   .color-text(@color-text1);
   margin-bottom: 27px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .find-a-hotel__button {
@@ -26,13 +36,17 @@
   font-size: 21px;
   color: @color-text2;
   background-color: @bg-cause;
-}
 
-.find-a-hotel__button:hover {
-  background-color: @bg-cause-hover;
-}
+  &:hover {
+    background-color: @bg-cause-hover;
+  }
 
-.find-a-hotel__button:active {
-  opacity: 0.3;
-  background-color: @bg-cause-active;
+  &:active {
+    opacity: 0.3;
+    background-color: @bg-cause-active;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
