@@ -39,14 +39,21 @@
     .bg-item(@icon-gift);
     order: 3;
 
+    br {
+      display: none;
+    }
+
     @media (min-width: @desktop-width) {
-      width: 190px;
+      br {
+        display: block;
+      }
     }
   }
 
   &:last-child {
     @media (max-width: @mobile-width-only) {
       background-size: 40px 34.9px;
+      width: auto;
     }
 
     .bg-item(@icon-burger);
