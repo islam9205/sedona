@@ -97,10 +97,22 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
     &::after {
       background-image: none;
+    }
+  }
+}
+
+.main-nav__box {
+  @media (min-width: @tablet-width) {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--bottom {
+      justify-content: flex-end;
     }
   }
 }
@@ -111,10 +123,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* &:nth-child(2) {
-      margin-right: auto;
-    } */
   }
 
   @media (min-width: @desktop-width) {

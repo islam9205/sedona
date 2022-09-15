@@ -6,16 +6,12 @@
   .list();
   margin: 0 22px;
   margin-bottom: 0;
-  /* width: 300px; */
-
 
   @media (min-width: @tablet-width) {
-    & {
-      margin: 0 31px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 70px;
-    }
+    margin: 0 31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -70,11 +66,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-left: 0;
     padding-top: 98px;
     text-align: center;
     width: 194px;
+
+    & *:last-child {
+      margin-bottom: 10px;
+    }
   }
 
   @media (min-width: @desktop-width) {

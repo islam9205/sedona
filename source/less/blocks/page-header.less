@@ -3,8 +3,6 @@
 
   &--column {
     flex-direction: column;
-    /* align-items: flex-start;
-    height: auto; */
   }
 
   &--column .page-header__logo {
@@ -21,14 +19,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    & {
-      position: relative;
-    }
+    flex-direction: column;
+    position: relative;
   }
 }
 
 .page-header__logo {
   margin-left: auto;
+  /* margin-left: 50%; */
+  /* margin-right: 30%; */
   margin-bottom: -28px;
 
   @media (min-width: @tablet-width) {
