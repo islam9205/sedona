@@ -13,7 +13,9 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin: 0 37px;
+    flex-wrap: wrap;
+    /* margin: 0 37px; */
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,7 +45,9 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
+    margin-bottom: 20px;
     border-bottom: none;
+    width: 256px;
 
     & *:last-child {
       margin-bottom: 0;
@@ -72,12 +76,19 @@
   margin-left: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 49px;
-    margin-left: 49px;
-
     &--1 {
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+
+    &--2 {
+      margin-right: 55px;
+      margin-left: 55px;
+    }
+
+    &--3 {
+      margin-right: 49px;
+      margin-left: 49px;
     }
   }
 
