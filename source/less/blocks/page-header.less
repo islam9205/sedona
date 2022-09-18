@@ -25,15 +25,21 @@
   }
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
-    /* position: relative; */
+    display: block;
+    position: relative;
   }
 }
 
 .page-header__box {
   min-height: 56px;
-  outline: 3px solid red;
-  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    /* height: 0; */
+    position: absolute;
+
+  }
+  /* outline: 3px solid red;
+  outline-offset: -3px; */
 }
 
 .page-header__logo {
@@ -52,4 +58,8 @@
       transform: translateX(-50%);
     }
   } */
+}
+
+.page-header__main {
+  position: absolute;
 }
