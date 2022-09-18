@@ -10,11 +10,9 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    /* margin: 0 31px; */
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 81px; */
   }
 }
 
@@ -51,16 +49,15 @@
 
   &:last-child {
     .bg-item(@icon-gift);
-    /* width: 155px; */
 
     @media (max-width: @mobile-width-only) {
       background-size: 32px 38px;
       width: auto;
     }
 
-    @media (min-width: @desktop-width) {
+    /* @media (min-width: @desktop-width) {
       width: 282px;
-    }
+    } */
   }
 
   & *:last-child {
@@ -68,20 +65,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    /* margin-right: 70px; */
     margin-bottom: 20px;
     padding-left: 0;
     padding-top: 98px;
     text-align: center;
-    width: 256px;
-
-    /* &:nth-child(3n) {
-      margin-right: 0;
-    } */
-
-    /* &:last-child {
-      margin-bottom: 10px;
-    } */
+    min-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
@@ -96,5 +84,17 @@
   @media (min-width: @tablet-width) {
     padding-top: 0;
     font-size: 21px;
+  }
+}
+
+.benefits__text {
+  @media (max-width: )
+
+  &:first-child {
+
+  }
+
+  @media (min-width: @tablet-width) {
+
   }
 }
