@@ -10,27 +10,33 @@
 
     <p class="page__paragraph">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
 
-    <header class="page__page-header page-header page-header--column">
-      <a href="" class="page-header__logo">
-        <img src="./img/logo/logotype-mobile.png" width="101.7" height="84" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
-      </a>
-      <nav class="page-header__main-nav main-nav main-nav--nojs">
+    <header class="page__page-header page-header">
+      <div class="page-header__box">
+        <a href="" class="page-header__logo">
+          <img src="./img/logo/logotype-mobile.png" width="101.7" height="84" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
+        </a>
+      </div>
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link main-nav__link--active">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
-          </li>
+          <div class="main-nav__box">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+            </li>
+          </div>
+          <div class="main-nav__box">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
