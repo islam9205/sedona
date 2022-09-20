@@ -1,5 +1,35 @@
 .block-sedona {
-  .bg(@color-text1, @bg-img-sedona);
+  padding-bottom: 40px;
+
+  background-color: @color-text1;
+  background-image:
+    @bgi-vector-left-mobile,
+    @bgi-vector-rigth-mobile,
+    @bg-img-sedona;
+  background-position:
+    0 bottom,
+    right bottom,
+    0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 70px;
+    min-height: 290px;
+    background-image:
+      @bgi-vector-left-tablet,
+      @bgi-vector-right-tablet,
+      @bgi-sedona-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+    min-height: 301px;
+    background-image:
+      @bgi-vector-left-desktop,
+      @bgi-vector-right-desktop,
+      @bgi-sedona-desktop;
+  }
 }
 
 .block-sedona--gallery {
@@ -8,6 +38,9 @@
 
 .block-sedona__img {
   margin: 0 auto;
-  padding-top: 52px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 456.9px;
+  }
 }
