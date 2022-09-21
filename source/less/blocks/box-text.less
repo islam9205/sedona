@@ -1,5 +1,6 @@
 .box-text {
   margin-top: 0;
+  margin: 0 20px;
 }
 
 .box-text__label {
@@ -7,8 +8,16 @@
 }
 
 .box-text__input {
-  .bg(@bg-input, none);
+  border: none;
+  padding-left: 22px;
+  .dimensions(100%, 58px);
+  line-height: 26px;
+  background-color: @bg-input;
   position: relative;
+
+  &::placeholder {
+    color: @color-link;
+  }
 
   &--img::after {
     content: "";
