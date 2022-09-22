@@ -3,3 +3,17 @@
     grid-area: attraction;
   }
 }
+
+.attraction__label {
+  &::before {
+    top: -10px;
+    .dimensions(46px, 46px);
+  }
+
+  .attraction__input:checked + &::after {
+    top: 4px;
+    left: 13px;
+    .dimensions(23.13px, 16.23px);
+    background-image: @input-checked;
+  }
+}

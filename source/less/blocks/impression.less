@@ -3,3 +3,22 @@
     grid-area: impression;
   }
 }
+
+.impression__label {
+  &::before,
+  &::after {
+    border-radius: 50%;
+  }
+
+  &::before {
+    top: -10px;
+    .dimensions(48px, 48px);
+  }
+
+  .impression__input:checked + &::after {
+    top: 4px;
+    left: 15px;
+    .dimensions(18px, 18px);
+    background-color: @color-text1;
+  }
+}
