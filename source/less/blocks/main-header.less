@@ -9,8 +9,17 @@
 
 .main-header__title {
   .size(inherit; inherit; inherit);
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .main-header__text {
   .size(14px; 24px; 400);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 435px;
+  }
 }
