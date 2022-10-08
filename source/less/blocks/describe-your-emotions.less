@@ -4,16 +4,27 @@
 
 .describe-your-emotions__legend {
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54.5px;
+  }
 }
 
 .describe-your-emotions__textarea {
   margin: 0 20px;
+  /* margin: 0 auto; */
   border: none;
   padding: 13px 22px 29px;
-  width: 279px;
+  display: block;
+  /* width: 279px; */
   height: 160px;
   background-color: @bg-input;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+
+  /* @media (min-width: @tablet-width) {
+    margin: 0 60px;
+    width: 100%;
+  } */
 }
 
 .leave-a-review__btn {
