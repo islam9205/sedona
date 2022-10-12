@@ -54,7 +54,26 @@
 }
 
 .leave-a-review__box {
-  display: flex;
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.leave-a-review__btn {
+  .dimensions(280px, 58px);
+  margin: 0 auto;
+  border: none;
+  display: block;
+  font-size: 21px;
+  color: @color-text2;
+  background-color: @bg-cause;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .leave-a-review__required-fields {
