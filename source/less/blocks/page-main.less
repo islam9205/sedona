@@ -48,6 +48,14 @@
 
   &--form {
     margin-bottom: 36px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 114px;
+    }
   }
 
   &--gallery {
@@ -56,10 +64,28 @@
 }
 
 .page-main__main-header {
-  margin-bottom: 18px;
+  &--form {
+    margin-bottom: 16px;
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 46.5px;
+    @media (min-width: @tablet-width) {
+      margin-bottom: 46.5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 36.5px;
+    }
+  }
+
+  &--gallery {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 67px;
+    }
   }
 }
 

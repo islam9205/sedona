@@ -53,6 +53,19 @@
     margin-bottom: 25px;
   }
 
+  &--align-1,
+  &--align-2 {
+    @media (min-width: @tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--align-2 {
+    @media (min-width: @desktop-width) {
+      text-align: center;
+    }
+  }
+
   &--line {
     @media (min-width: @tablet-width) {
       &::before,
