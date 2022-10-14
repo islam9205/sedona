@@ -47,9 +47,41 @@
 .leave-a-review__legend {
   padding-top: 20px;
   text-align: center;
+  position: relative;
 
   &--bottom {
     margin-bottom: 25px;
+  }
+
+  &--line {
+    @media (min-width: @tablet-width) {
+      &::before,
+      &::after {
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: @line;
+        position: absolute;
+        top: 70%;
+      }
+
+      &-contacts::before,
+      &-contacts::after {
+        top: 85%;
+      }
+
+      /* &-contacts::before {
+
+      }
+
+      &-attraction {
+
+      }
+
+      &-describe-your-emotions {
+
+      } */
+    }
   }
 }
 
