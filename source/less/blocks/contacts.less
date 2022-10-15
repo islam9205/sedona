@@ -20,6 +20,7 @@
 .contacts__container {
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -32,13 +33,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 60px;
+    display: flex;
+    align-items: center;
+    /* margin: 0 60px; */
     margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+
+    &:first-of-type {
+      margin-right: 79px;
+    }
   }
 }
 
 .contacts__label {
-  margin-bottom: 38px;
+  @media (min-width: @desktop-width) {
+    margin-right: 17px;
+  }
 }
 
 .contacts__label--img::after {
@@ -58,4 +71,8 @@
 
 .contacts__label--email::after {
   background-image: @input-mail;
+}
+
+.contacts__span {
+  display: none;
 }
