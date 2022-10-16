@@ -39,6 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 0;
     flex-grow: 1;
 
     &--tel {
@@ -66,22 +67,18 @@
   background-color: @bg-input-img;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.contacts__label--tel::after {
-  background-image: @input-tel;
 
   @media (min-width: @desktop-width) {
     top: 0;
   }
 }
 
+.contacts__label--tel::after {
+  background-image: @input-tel;
+}
+
 .contacts__label--email::after {
   background-image: @input-mail;
-
-  @media (min-width: @desktop-width) {
-    top: 11px;
-  }
 }
 
 .contacts__span {

@@ -2,6 +2,10 @@
   &--grid {
     grid-area: attraction;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 62.5px;
+  }
 }
 
 .attraction__legend {
@@ -17,6 +21,19 @@
     margin: 0 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 43px;
+  }
+}
+
+.attraction__text {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
