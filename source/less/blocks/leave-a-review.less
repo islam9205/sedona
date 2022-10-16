@@ -49,10 +49,6 @@
   text-align: center;
   position: relative;
 
-  /* &--bottom {
-    margin-bottom: 25px;
-  } */
-
   &--align-1,
   &--align-2 {
     @media (min-width: @tablet-width) {
@@ -97,6 +93,13 @@
 
       &-describe-your-emotions::after {
         left: 144%;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before,
+      &::after {
+        width: 280px;
       }
     }
   }
