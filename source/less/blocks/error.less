@@ -1,3 +1,27 @@
 .error {
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  padding-bottom: 35px;
+  position: absolute;
+  top: 1650px;
+
+  & * {
+    margin-top: 0;
+  }
+}
+
+.error__title {
+  margin-top: 40px;
+}
+
+.error__text {
+  margin-bottom: 22px;
+}
+
+.error__br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.error__btn {
+  .dimensions(180px, 58px);
 }
