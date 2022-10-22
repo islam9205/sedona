@@ -1,10 +1,11 @@
 .error {
+  padding: 0 40px;
   padding-bottom: 35px;
-  position: absolute;
-  top: 1650px;
+  top: 1486px;
 
-  & * {
-    margin-top: 0;
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    top: 1410px;
   }
 }
 
@@ -14,12 +15,6 @@
 
 .error__text {
   margin-bottom: 22px;
-}
-
-.error__br {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
 
 .error__btn {

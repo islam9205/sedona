@@ -1,8 +1,12 @@
 .form-modal {
-  padding: 0 40px;
   text-align: center;
   background-color: @color-text2;
   box-shadow: 0 7px 15px @form-modal;
+  position: absolute;
+
+  & * {
+    margin-top: 0;
+  }
 }
 
 .form-modal__title {
@@ -11,6 +15,12 @@
 
 .form-modal__text {
   .size(14px, 24px, 400);
+}
+
+.form-modal__br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-modal__btn {
