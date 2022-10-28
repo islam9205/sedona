@@ -1,11 +1,15 @@
 .review-sent {
-  padding: 0 20px;
-  padding-bottom: 20px;
+  /* padding: 0 20px; */
+  /* padding-bottom: 20px; */
   top: 1813px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     top: 1300px;
+    padding: 0 91px;
+    padding-bottom: 44px;
     width: 640px;
+    box-sizing: border-box;
   }
 }
 
@@ -15,8 +19,23 @@
 
 .review-sent__text {
   margin-bottom: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.review-sent__box {
+  padding: 20px;
+  background-color: @bg-input;
 }
 
 .review-sent__btn {
+  margin: 0 auto;
   .dimensions(280px, 58px);
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
