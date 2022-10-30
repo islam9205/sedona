@@ -7,9 +7,21 @@
 }
 
 .video-block__text {
+  margin: 0 40px;
+  margin-bottom: 33px;
   .size(14px, 24px, 400);
 }
 
 .video-block__video {
   display: block;
+  position: relative;
+}
+
+.video-block__wrapper {
+  position: absolute;
+
+  &--1 {
+    bottom: 0;
+    .dimensions(280px, 45px);
+  }
 }
