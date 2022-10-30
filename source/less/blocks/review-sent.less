@@ -1,15 +1,14 @@
 .review-sent {
-  /* padding: 0 20px; */
-  /* padding-bottom: 20px; */
   top: 1813px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    top: 1300px;
-    padding: 0 91px;
-    padding-bottom: 44px;
     width: 640px;
-    box-sizing: border-box;
+    top: 1300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1170px;
   }
 }
 
@@ -18,17 +17,20 @@
 }
 
 .review-sent__text {
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 110px 32px;
   }
 }
 
 .review-sent__box {
-  padding: 20px;
+  padding: 20px 0;
   background-color: @bg-input;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 0;
+  }
 }
 
 .review-sent__btn {
@@ -36,6 +38,6 @@
   .dimensions(280px, 58px);
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 458px;
   }
 }
