@@ -4,12 +4,21 @@
 
 .video-block__title {
   .size(inherit, inherit, inherit);
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-block__text {
   margin: 0 40px;
   margin-bottom: 33px;
   .size(14px, 24px, 400);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 160px;
+    margin-bottom: 62px;
+  }
 }
 
 .video-block__video {
