@@ -64,7 +64,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
     color: @color-text2;
     /* background: @bgi-line repeat-x; */
@@ -111,12 +111,19 @@
   padding-left: 37px;
   width: 100px;
   text-align: left;
-  background: @icon-like no-repeat 0 50%;
+  /* background: @icon-like no-repeat 0 50%; */
+  /* background-image: @icon-like; */
+  background-repeat: no-repeat;
+  background-position: 0 50%;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 0;
     bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: @icon-like-white;
   }
 }
 
@@ -124,6 +131,7 @@
   @media (min-width: @dektop-width) {
     position: absolute;
     bottom: 0;
+    width: 100%;
     height: 80px;
     background-color: @color-link;
     opacity: 0.3;
