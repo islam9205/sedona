@@ -60,13 +60,11 @@
           <p class="text cause__text">— №1 —</p>
           <p class="text cause__text"> Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <!-- <img class="couse__img" src="./img/photo-city/photo-city1.jpg" width="320" height="260" alt="На фотографии отображено дерево, флаги, дом с замутнённой вывеской. Виднеются горы."> -->
-        <div>
-          <img class="couse__img" src="./img/photo-city/photo-city1-desktop.jpg" srcset="
-            ./img/photo-city/photo-city1.jpg 320w,
-            ./img/photo-city/photo-city1-tablet.jpg 768w,
-            ./img/photo-city/photo-city1-desktop.jpg 1200w">
-        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/photo-city/photo-city-desktop.jpg 1x, ./img/photo-city/photo-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/photo-city/photo-city-tablet.jpg 1x, ./img/photo-city/photo-city-tablet@2x.jpg 2x">
+          <img class="couse__img" src="./img/photo-city/photo-city-mobile.jpg" srcset="./img/photo-city/photo-city-mobile@2x.jpg 2x" alt="На фотографии отображено дерево, флаги, дом с замутнённой вывеской. Виднеются горы.">
+        </picture>
       </section>
       <section class="page-main__benefits benefits">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -91,7 +89,11 @@
           <p class="text cause__text">— №2 —</p>
           <p class="text cause__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="couse__img" src="./img/photo-bridge/photo-bridge1.jpg" width="320" height="260" alt="Огромный скалистый выступ.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/photo-bridge/photo-bridge-desktop.jpg 1x, ./img/photo-bridge/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/photo-bridge/photo-bridge-tablet.jpg 1x, ./img/photo-bridge/photo-bridge-tablet@2x.jpg 2x">
+          <img class="couse__img" src="./img/photo-bridge/photo-bridge-mobile.jpg" srcset="./img/photo-bridge/photo-bridge-mobile@2x.jpg 2x" alt="Огромный скалистый выступ.">
+        </picture>
       </section>
       <section class="page-main__other-benefits other-benefits">
         <h2 class="visually-hidden">Остальные преимущества</h2>

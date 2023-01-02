@@ -6,7 +6,7 @@
   background-image:
     @bgi-vector-left-mobile,
     @bgi-vector-rigth-mobile,
-    @bgi-sedona-mobie-x2;
+    @bgi-sedona-mobile;
   background-position:
     0 bottom,
     right bottom,
@@ -17,7 +17,7 @@
     background-image:
       @bgi-vector-left-mobile,
       @bgi-vector-rigth-mobile,
-      @bgi-sedona-mobie-x2;
+      @bgi-sedona-mobile-x2;
   }
 
   @media (min-width: @tablet-width) {
@@ -28,6 +28,13 @@
       @bgi-vector-left-tablet,
       @bgi-vector-right-tablet,
       @bgi-sedona-tablet;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        @bgi-vector-left-tablet,
+        @bgi-vector-right-tablet,
+        @bgi-sedona-tablet-x2;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -37,6 +44,13 @@
       @bgi-vector-left-desktop,
       @bgi-vector-right-desktop,
       @bgi-sedona-desktop;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        @bgi-vector-left-desktop,
+        @bgi-vector-right-desktop,
+        @bgi-sedona-desktop-x2;
+    }
   }
 }
 

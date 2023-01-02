@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon-16.ico">
+    <link rel="icon" href="favicon-32.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
 
@@ -53,7 +56,11 @@
         <h2 class="visually-hidden">Галерея</h2>
         <ul class="img-block__list">
           <li class="img-block__item">
-            <img class="img-block__img img-block__img--big" src="./img/gallery/photo-1-mobile.jpg" width="280" height="280" alt="Изображение дороги, вокруг растительность, на заднем фоне горы. И в дали виднеется машина, направляющаяся к нам на встречу.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/gallery/photo-1-desktop.jpg 1x, ./img/gallery/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/gallery/photo-1-tablet.jpg 1x, ./img/gallery/photo-1-tablet@2x.jpg 2x">
+              <img class="img-block__img img-block__img--big" src="./img/gallery/photo-1-mobile.jpg" srcset="./img/gallery/photo-1-mobile@2x.jpg 2x" alt="Изображение дороги, вокруг растительность, на заднем фоне горы. И в дали виднеется машина, направляющаяся к нам на встречу.">
+            </picture>
             <div class="img-block__box">
               <h3 class="img-block__title">Неродные просторы</h3>
               <p class="img-block__author">Автор фото: Борис</p>
