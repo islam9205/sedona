@@ -6,12 +6,19 @@
   background-image:
     @bgi-vector-left-mobile,
     @bgi-vector-rigth-mobile,
-    @bgi-sedona-mobile;
+    @bgi-sedona-mobie-x2;
   background-position:
     0 bottom,
     right bottom,
     0 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      @bgi-vector-left-mobile,
+      @bgi-vector-rigth-mobile,
+      @bgi-sedona-mobie-x2;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 95px;
