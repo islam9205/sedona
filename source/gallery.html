@@ -15,9 +15,14 @@
 
     <header class="page__page-header page-header page-header--column">
       <div class="page-header__box">
+        <!-- <a href="" class="page-header__logo">
+          <img src="./img/logo/logotype-mobile.png" width="101.7" height="84" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
+        </a> -->
         <a href="" class="page-header__logo">
-          <!-- <img src="./img/logo/logotype-mobile.png" width="101.7" height="84" srcset="" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона."> -->
-          <img src="./img/logo/logotype-mobile.svg" srcset="./img/logo/logotype-mobile.svg 320w, ./img/logo/logotype-desktop.svg 1200w" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logo/logotype-desktop.svg">
+            <img src="./img/logo/logotype-mobile.svg" alt="Логотип виде перевернутого треугольника, с двумя слова на английском языке, CITYOF SEDONA. Что в переводе означает город Седона.">
+          </picture>
         </a>
       </div>
       <nav class="page-header__main-nav main-nav main-nav--nojs">
