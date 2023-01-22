@@ -11,6 +11,12 @@
   </head>
   <body class="page__body">
 
+    <svg style="display: none">
+      <symbol id="logo">
+
+      </symbol>
+    </svg>
+
     <p class="page__paragraph">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
 
     <header class="page__page-header page-header page-header--column">
@@ -64,6 +70,10 @@
           <p class="text cause__text"> Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-city/photo-city-desktop.webp, ./img/photo-city/photo-city-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-city/photo-city-tablet.webp, ./img/photo-city/photo-city-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-city/photo-city-mobile.webp, ./img/photo-city/photo-city-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="./img/photo-city/photo-city-desktop.jpg 1x, ./img/photo-city/photo-city-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="./img/photo-city/photo-city-tablet.jpg 1x, ./img/photo-city/photo-city-tablet@2x.jpg 2x">
           <img class="couse__img" src="./img/photo-city/photo-city-mobile.jpg" srcset="./img/photo-city/photo-city-mobile@2x.jpg 2x" alt="На фотографии отображено дерево, флаги, дом с замутнённой вывеской. Виднеются горы.">
