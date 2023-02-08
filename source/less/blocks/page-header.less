@@ -63,3 +63,17 @@
     transform: translateX(-50%);
   }
 }
+
+.page-header__img-mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__img-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
