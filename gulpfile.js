@@ -4,7 +4,9 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
+
 
 // Styles
 
@@ -17,7 +19,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 }
 
@@ -49,3 +51,11 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
+}
+
+exports.html = html;
