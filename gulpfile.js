@@ -8,6 +8,7 @@ const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const squoosh = require("gulp-libsquoosh");
 
 
 // Styles
@@ -27,6 +28,8 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
+exports.styles = styles;
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -35,14 +38,20 @@ const html = () => {
 
 exports.html = html;
 
-exports.styles = styles;
+const images = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.images = images;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'sours'
     },
     cors: true,
     notify: false,
