@@ -29,7 +29,9 @@
     "build": "gulp styles",
     "start": "gulp",
     "html": "gulp html",
-    "images": "gulp images"
+    "copyImages": "gulp copyImages",
+    "optimizeImages": "gulp optimizeImages",
+    "createWebp": "gulp createWebp"
   },
   "browserslist": [
     "last 2 versions",

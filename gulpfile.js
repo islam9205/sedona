@@ -10,6 +10,7 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 
 
 // Styles
@@ -63,10 +64,14 @@ exports.copyImages = copyImages;
 // webp
 
 const createWebp = () => {
-  gulp.src('source/img/**/*{png,jpg}')
-    .pipe(webp())
-    .pipe(gulp.dest('build/img'))
+  gulp.src("source/img/**/*{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
 }
+
+// sprite
+
+
 
 exports.createWebp = createWebp;
 
@@ -94,5 +99,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, html, optimizeImages, copyImages, createWebp, server, watcher
+  styles, server, watcher
 );
