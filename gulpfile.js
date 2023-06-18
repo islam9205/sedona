@@ -9,6 +9,7 @@ const sync = require("browser-sync").create();
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const squoosh = require("gulp-libsquoosh");
+const webp = require("gulp-webp");
 
 
 // Styles
@@ -30,6 +31,8 @@ const styles = () => {
 
 exports.styles = styles;
 
+// html
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -38,20 +41,41 @@ const html = () => {
 
 exports.html = html;
 
-const images = () => {
+// optimizeImages
+
+const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"))
 }
 
-exports.images = images;
+exports.optimizeImages = optimizeImages;
+
+// copyImages
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg)")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.copyImages = copyImages;
+
+// webp
+
+const createWebp = () => {
+  gulp.src('source/img/**/*{png,jpg}')
+    .pipe(webp())
+    .pipe(gulp.dest('build/img'))
+}
+
+exports.createWebp = createWebp;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'sours'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -70,5 +94,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, html, server, watcher
+  styles, html, optimizeImages, copyImages, createWebp, server, watcher
 );
