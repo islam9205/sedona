@@ -71,9 +71,16 @@ const createWebp = () => {
 
 // sprite
 
+const sprite = () => {
+    return gulp
+        .src('source/img/**/*.svg', { base: 'src/svg' })
+        .pipe(rename({prefix: 'icon-'}))
+        .pipe(svgstore())
+        .pipe(gulp.dest('build/img'));
+};
 
 
-exports.createWebp = createWebp;
+exports.sprite = sprite;
 
 // Server
 

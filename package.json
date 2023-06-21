@@ -31,7 +31,8 @@
     "html": "gulp html",
     "copyImages": "gulp copyImages",
     "optimizeImages": "gulp optimizeImages",
-    "createWebp": "gulp createWebp"
+    "createWebp": "gulp createWebp",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
