@@ -11,6 +11,7 @@ const rename = require("gulp-rename");
 const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const del = require("del");
 
 
 // Styles
@@ -73,14 +74,34 @@ const createWebp = () => {
 
 const sprite = () => {
     return gulp
-        .src('source/img/**/*.svg', { base: 'src/svg' })
+        .src('source/img/**/*.svg', { base: 'src/sprite' })
         .pipe(rename({prefix: 'icon-'}))
         .pipe(svgstore())
         .pipe(gulp.dest('build/img'));
-};
-
+}
 
 exports.sprite = sprite;
+
+// Copy
+
+const copy = (dony) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+const clean = () => {
+  return del("build");
+}
+
+exports.clean = clean;
 
 // Server
 
@@ -108,3 +129,35 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+/*
+
+// build
+
+const build = gulp.series(
+  clean,
+  cope,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    sprite,
+    createWebp
+  )
+);
+
+exports.default = gulp.series(
+  clean,
+  cope,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    sprite,
+    createWebp
+  ),
+  server,
+  watcher
+);
+
+*/
