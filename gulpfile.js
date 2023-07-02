@@ -97,6 +97,8 @@ const copy = (dony) => {
 
 exports.copy = copy;
 
+// clean
+
 const clean = () => {
   return del("build");
 }
